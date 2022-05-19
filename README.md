@@ -38,6 +38,6 @@
 > 데이터를 조절한후 모습 그래프만 보았을때 큰 차이는 없는 것 처럼보이지만 
 그래프에 직접 마우스를 올려보면 값이 변한 것을 볼 수 있습니다.
 
-<img src ='./Image/screen2.jpg' width = 500>
+<img src ='./Image/screen3.jpg' width = 500>
 
 </details>
