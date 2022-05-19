@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel='stylesheet' type="text/css" href="visualize.css" />
+    <link rel='stylesheet' type="text/css" href="visualize-light.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="visualize.jQuery.js"></script>
+    <script>
+        $(function () {
+            // $('#data').visualize({ type: 'bar' });
+            // $('#data').visualize({ type: 'area', width: '400px' });
+            // $('#data').visualize({ type: 'pie', pieLabelPos: 'inside' });
+            $('#data').visualize({ type: 'line', lineWeight: 2 });
+        })
+    </script>
+
+</head>
+
+<body>
+    <table id="data">
+        <caption>abc</caption>
+        <thead>
+            <tr>
+                <td></td>
+                <th>7월</th>
+                <th>8월</th>
+                <th>9월</th>
+                <th>10월</th>
+                <th>11월</th>
+                <th>12월</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>수도열광비</th>
+                <td>213</td>
+                <td>224</td>
+                <td>205</td>
+                <td>187</td>
+                <td>190</td>
+                <td>202</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

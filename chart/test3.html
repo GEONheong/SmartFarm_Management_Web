@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var today = new Date();
+            var line;
+            $('#submit').on('click', function () {
+                date = new Date($('#date-input').val());
+                if (date.getDate() < 10) {
+                    day = "0" + (date.getDate());
+                }
+                else {
+                    day = date.getDate();
+                }
+
+                if ((date.getMonth() + 1) < 10) {
+                    month = "0" + (date.getMonth() + 1);
+                }
+                else {
+                    month = date.getMonth() + 1;
+                }
+
+                year = date.getFullYear();
+                line = year + "" + month + "" + day + "" + today.getHours();
+                alert(line);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <input type="date" id="date-input" value="2018-10-26" min="2018-10-26" max="2019-07-01" />
+    <button id="submit">Submit</button>
+</body>
+
+</html>

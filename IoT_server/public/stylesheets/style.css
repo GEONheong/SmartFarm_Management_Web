@@ -1,0 +1,29 @@
+body {
+  display:inline-block;
+  padding-top: 50px;
+  padding-left : 20%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+ 
+}
+
+a {
+  color: #00B7FF;
+}
+button{
+  width:50px;
+  height: 20px;
+}
+
+#submit{
+  width:100px;
+}
+
+#chartContainer{
+  display: inline;
+}
+
+#chart_div1,#chart_div2,#chart_div3 {
+  width: 1100px; 
+  height: 350px;
+}

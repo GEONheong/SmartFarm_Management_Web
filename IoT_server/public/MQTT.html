@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MQTT Monitoring Service</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.google.com/jsapi"></script>
+	<script src="javascripts/socketDo.js"></script>
+</head>
+
+<body>
+
+	<div>
+		<h2>MyFarm Mornitoring Service<br>
+			Tomato</h2>
+		<input type="date" id="date-input" value="2018-10-26" min="2018-10-26" max="2019-07-01" />
+		<button id="submit">Select Date</button>
+	</div>
+	<div id="chartContainer">
+		<div id="chart_div1"></div>
+		<button id="tmp_up_btn">▲</button>
+		<button id="tmp_down_btn">▼</button>
+		<p id="tmpMoniter">0</p>
+
+		<div id="chart_div2"></div>
+		<button id="hum_up_btn">▲</button>
+		<button id="hum_down_btn">▼</button>
+		<p id="humMoniter">0</p>
+
+		<div id="chart_div3"></div>
+		<button id="Co2_up_btn">▲</button>
+		<button id="Co2_down_btn">▼</button>
+		<p id="Co2Moniter">0</p>
+	</div>
+</body>
+
+</html>
